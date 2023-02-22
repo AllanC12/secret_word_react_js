@@ -29,8 +29,7 @@ const Game = ({verifyLetter ,
           <span>Pontuação: {score}</span>
        </p>
        <h3 className="tip">
-        Dica sobre a palavra:
-           <span>{pickCategory}</span>
+        Dica sobre a palavra: <span> {pickCategory}</span>
        </h3>
        <p>Você ainda tem {guesses} tentativas</p>
        <div className="wordContainer">

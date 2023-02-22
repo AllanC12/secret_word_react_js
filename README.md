@@ -1,3 +1,11 @@
+<div allign="center" width="700px">
+   <img src="https://user-images.githubusercontent.com/112294367/220489405-f3c56b3e-fc74-4d42-a3d1-3d563e1399c8.png"/>
+   <img src="https://user-images.githubusercontent.com/112294367/220489401-f94ad25c-ca2f-4ac8-aee4-7dce77437237.png"/>
+   <img src="https://user-images.githubusercontent.com/112294367/220489408-e046b180-8fd2-4d84-8e93-00c4e73b8712.png"/>
+   <img src="https://user-images.githubusercontent.com/112294367/220489399-034a7756-92a1-44b4-a863-e99b738e75f7.png"/>
+</div>
+As palavras tem de ser adivinhadas com base na dica dada. No diretório src/data existe um arquivo contendo todas as palavaras com suas respectivas dicas , sendo assim , fica fácil adicionar novas palavras com seus respectivos temas.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
