@@ -3,7 +3,6 @@ import {useState ,useRef} from 'react'
  
 const Game = ({verifyLetter , 
   pickCategory , 
-  pickWord ,
   letters , 
   guessedLetters , 
   wrongLetters ,

@@ -63,16 +63,16 @@ const pickWordAndCategory = useCallback(() => {
   const verifyLetter = (letter) => {
     const normalizedLetter = letter.toLowerCase()
 
+    //retornando em caso de letra escolhida repetida
     if(guessedLetters.includes(normalizedLetter || wrongLetters.includes(normalizedLetter))){
-      console.log('letter include')
-      return
+         return
     }
 
     //in case of correct or incorrect letter
     if(letters.includes(normalizedLetter)){
-      setGuessedLetters(actualState => 
-        [...actualState,normalizedLetter]
-        )
+      setGuessedLetters(actualState =>  [...actualState,normalizedLetter])
+      setScore(actualScore => actualScore + 100)
+
       }else{
         setWrongLetters(actualState => 
           [...actualState,normalizedLetter,]
@@ -95,11 +95,10 @@ const pickWordAndCategory = useCallback(() => {
       
    //check in case of victory
    useEffect(()=>{
-        const uniqueLetters =[ ...new Set(letters)]
+        const uniqueLetters =[ ...new Set(letters)] 
         
         if(guessedLetters.length === uniqueLetters.length){
           startGame()
-          setScore(actualScore => actualScore + 100)
        }
    },[guessedLetters])
 
